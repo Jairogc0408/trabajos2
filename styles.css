@@ -1,0 +1,139 @@
+/* Estilos para el formulario de inicio y registro */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('backgrounds/fondo.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;  
+    color: #fff; /* Color de texto más claro */
+}
+
+.login-container, .register-container {
+    background-color: rgba(88, 213, 245, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+h2 {
+    text-align: center;
+    color: #ff4500; /* Rojo intenso */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #ff4500; /* Rojo para las etiquetas */
+}
+
+input {
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #ff4500; /* Rojo intenso al enfocar */
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    background-color: #1e90ff; /* Azul brillante */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1c86ee; /* Azul más oscuro al pasar el mouse */
+}
+
+.error {
+    color: #dc3545;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.avatar-preview {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Estilos generales */
+.dashboard-main, .create-character-container, .characters-list-container, .character-details-container, .leaderboard-container, .dashboard-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+    margin: auto;
+}
+
+.character-details-container img {
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 8px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el contenedor de la tabla de clasificaciones */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #ff4500; /* Rojo para el encabezado */
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
